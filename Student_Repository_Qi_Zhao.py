@@ -1,5 +1,5 @@
 """
-This is HW08 Written By Qi Zhao. This file contains following functions: date_arithmetic()-> Tuple[datetime, datetime, int]
+This is HW10 Written By Qi Zhao. This file contains following functions: date_arithmetic()-> Tuple[datetime, datetime, int]
 file_reader(str, int, str, bool) -> Iterator[List[str]], class FileAnalyzer
 """
 from typing import List, Tuple, Iterator, Dict
@@ -12,9 +12,9 @@ def date_arithmetic() -> Tuple[datetime, datetime, int]:
         What is the date three days after Feb 27, 2019?
         How many days passed between Feb 1, 2019 and Sept 30, 2019?
     """
-    three_days_after_02272020: datetime = # your code goes here for calculation
-    three_days_after_02272019: datetime = # your code goes here for calculation
-    days_passed_02012019_09302019: int = # your code goes here for calculation
+    three_days_after_02272020: datetime 
+    three_days_after_02272019: datetime 
+    days_passed_02012019_09302019: int 
 
     return three_days_after_02272020, three_days_after_02272019, days_passed_02012019_09302019
  
