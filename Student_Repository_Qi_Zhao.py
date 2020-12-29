@@ -1,5 +1,5 @@
 """
-This is HW11 Written By Qi Zhao. This file contains following functions: date_arithmetic()-> Tuple[datetime, datetime, int]
+This is HW12 Written By Qi Zhao. This file contains following functions: date_arithmetic()-> Tuple[datetime, datetime, int]
 file_reader(str, int, str, bool) -> Iterator[List[str]], class FileAnalyzer
 """
 from typing import List, Tuple, Iterator, Dict
