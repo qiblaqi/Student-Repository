@@ -48,15 +48,15 @@ class HW12:
         """
         # start to update students 
         self.my_path = os.path.join(self.directory,'students.txt')
-        students_list:List = list(self.file_reader(3,';'))
+        students_list:List = list(self.file_reader(3,'\t'))
         self.students.extend(students_list)
         # update instructors
         self.my_path = os.path.join(self.directory,'instructors.txt')
-        instructors_list:List = list(self.file_reader(3,'|'))
+        instructors_list:List = list(self.file_reader(3,'\t'))
         self.instructors.extend(instructors_list)
         # update grades
         self.my_path = os.path.join(self.directory,'grades.txt')
-        grades_list:List[Tuple[str,str,str,str]] = list(self.file_reader(4,'|'))
+        grades_list:List[Tuple[str,str,str,str]] = list(self.file_reader(4,'\t'))
         new_grades_list:List[Tuple[str,str,str,str]] = []
         for item1,item2,item3,item4 in grades_list[1:]:
             new_grades_list.append((item1,item2,self.gpa_table[item3],item4))
