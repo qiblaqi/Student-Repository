@@ -1,14 +1,17 @@
 """
-This is HW12 unittest scripts. Written By Qi Zhao. Testing the following methods and class: date_arithmetic()-> Tuple[datetime, datetime, int]
-file_reader(str, int, str, bool) -> Iterator[List[str]], class FileAnalyzer
+This is HW12 unittest scripts. Written By Qi Zhao. Testing the following methods and class: HW10
 """
 import unittest
+import os
+from Student_Repository_Qi_Zhao import *
+from typing import List, Tuple, Iterator, Dict
 
-# from HW08_Qi_Zhao import *
-
-class HW08Test(unittest.TestCase):
-    def test_date_arithmetic(self) -> None:
-        pass
+class HW12Test(unittest.TestCase):
+    test_path:str = os.path.dirname(__file__)
+    
+    def test_grades(self) -> None:
+        stevens_data: "HW12" = HW12(self.test_path, "Stevens")
+        stevens_data.pretty_print()
     
 if __name__ == '__main__':
     unittest.main()
